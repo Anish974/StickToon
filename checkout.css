@@ -1,0 +1,335 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Header Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 60px;
+}
+
+.header .navbar {
+    display: flex;
+}
+
+.header .navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.header .navbar a:hover {
+    color: #0056b3;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Checkout Container */
+.checkout-page {
+    padding: 80px 30px 30px; /* Adjusted for fixed header */
+}
+
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Address Section */
+.address-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.address-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.address-section label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.address-section input[type="text"], 
+.address-section input[type="email"], 
+.address-section input[type="tel"], 
+.address-section textarea, 
+.address-section select {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.address-section input[type="text"]:focus, 
+.address-section input[type="email"]:focus, 
+.address-section input[type="tel"]:focus, 
+.address-section textarea:focus, 
+.address-section select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.address-section textarea {
+    resize: vertical;
+}
+
+/* Order Summary Section */
+.order-summary-section {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.order-summary-dropdown {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#order-summary-content {
+    margin-top: 15px;
+}
+
+#order-items {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.order-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.order-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#order-total, #discounted-total {
+    margin: 10px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button.btn {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+button.btn:active {
+    transform: scale(0.98);
+}
+
+/* Final Total Section */
+#final-order-total {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Styles for Specific Sections */
+#discount-code {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: calc(100% - 160px); /* Adjusted width to fit with the apply button */
+    margin-right: 10px;
+}
+
+#apply-discount {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#apply-discount:hover {
+    background-color: #218838;
+    transform: scale(1.03);
+}
+
+#apply-discount:active {
+    transform: scale(0.98);
+}
+
+#discounted-total {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Add Tip Section Styles */
+#tip {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+
+#tip:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+/* Container Adjustment for Mobile Devices */
+@media (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+
+    .address-section {
+        order: 2;
+    }
+
+
+    .order-summary-section {
+        order: 1;
+        padding: 15px;
+    }
+
+    #order-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .order-item img {
+        margin-bottom: 10px;
+    }
+
+    .order-item-details {
+        display: flex;
+    }
+
+    #discount-code {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #apply-discount {
+        width: 100%;
+    }
+
+    #discounted-total {
+        margin-top: 10px;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #28a745;
+    }
+}
+
+

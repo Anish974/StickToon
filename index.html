@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+    <link rel="icon" href="Images/Sticktoon Logo monster.png" type="image/png">
+    <title>Sticktoon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+
+<body>
+    <header class="header" style="padding: rem;">
+        <a class="logo" style=" display: flex; size: 3rem;">
+            <img src="Images/Sticktoon Logo 3.png" style="border-radius: 0px;" height="59px">
+        </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a> 
+            <a href="#about">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons" >
+            <div class="fa fa-bars" id="menu-btn" ></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-icon">
+                <span id="cart-count">0</span>
+            </div>
+            
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder="Search Here....">
+            <label for="search-box" class="fa fa-search" id="search-btn"></label>
+        </form>
+        <form class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Your email" class="email-box">
+            <input type="password" placeholder="Your Password" class="password-box">
+            <p>Forgot Your Password <a href="#">Click Here</a></p>
+            <p> Don't Have An Account <a href="#">Create Now</a></p>
+            <input type="submit" value="LogIn Now" class="btn">
+        </form>
+    </header>
+
+    <div id="cart-overlay">
+        <span class="cart-header" id="close-cart">X</span>
+        <h1 class="cart-header">Your Cart</h1>
+        <div id="cart-items">
+            <!-- Cart items go here -->
+        </div>
+        <div id="cart-footer">
+            <div id="cart-total">Total: Rs. 0.00</div> <!-- Fixed to the bottom -->
+            <a href="checkout.html"><button class="btn-checkout" id="checkout-btn">Checkout</button></a> <!-- Fixed to the bottom -->
+        </div>
+    </div>
+    
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <img src="Images/Background image Sticktoon.png" style="margin-top: 5rem;">
+            </div>
+        </section>
+        
+<!-- Categories Section -->
+
+
+        <section class="categories" id="categories" style="background-color: rgb(249, 249, 249); padding: 6.5rem;">
+            <h1 class="heading"><span>Categories</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="Images/Anime.png">
+                    <h3>Anime</h3>
+                    <p>Here You'll find Anime Stickers</p>
+                    <a href="#anime" class="categories-btn">Click Here</a>
+                </div>
+                <div class="box">
+                    <img src="Images/Cartoon.png">
+                    <h3>Cartoons</h3>
+                    <p>Here You'll find Cartoon Stickers</p>
+                    <a href="#cartoons" class="categories-btn">Click Here</a>
+                </div>
+                <div class="box">
+                    <img src="Images/Slogans.png">
+                    <h3>Slogans</h3>
+                    <p>Here You'll find Slogans Stickers</p>
+                    <a href="#slogans" class="categories-btn">Click Here</a>
+                </div>
+                <div class="box">
+                    <img src="Images/God.png">
+                    <h3>Hindu God</h3>
+                    <p>Here You'll find Hindu God Stickers</p>
+                    <a href="#god" class="categories-btn">Click Here</a>
+                </div>
+            </div>
+        </section>
+<!-- Categories Section End -->
+
+<!-- anime Section -->
+        <section class="anime" id="anime" style="padding: 2rem;">
+            <h1 class="heading"><span>Anime</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="Images/Naruto Sticker 1.png" style="height: 23rem ; border-radius: 50%;"> 
+                    <h3 class="product-name">Naruto Sticker</h3>
+                    <h2 class="product-price">Rs. 15.00</h2>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="Images/kakashi Sticker.png" style="height: 23rem"> 
+                    <h3 class="product-name">Kakashi Sticker</h3>
+                    <h2 class="product-price">Rs. 15.00</h2>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="Images/Gojo Sticker.png"style="height: 23rem"> 
+                    <h3 class="product-name">Gojo Sticker</h3>
+                    <h2 class="product-price">Rs. 15.00</h2>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="Images/Akatsuki sticker.png" style="height:23rem;">  
+                    <h3 class="product-name">Akatsuki Symbol </h3>
+                    <h2 class="product-price">Rs. 15.00</h2>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+            </div>
+        </section>
+<!-- anime Section End -->
+
+<!-- cartoons Section -->
+        <section class="cartoons" id="cartoons" style="padding: 2rem;">
+            <h1 class="heading"><span>Cartoons</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="" style="height: 25rem ; border-radius: 50%;"> 
+                    <h3>Coming Soon....... </h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+                <div class="box">
+                    <img src="" style="height: 25rem"> 
+                    <h3>Coming Soon.......</h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+                <div class="box">
+                    <img src=""style="height: 25rem"> 
+                    <h3>Coming Soon.......</h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+                <div class="box">
+                    <img src="" style="height: 25rem"> 
+                    <h3>Coming Soon.......</h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+            </div>
+        </section>
+<!-- cartoons Section End -->
+
+<!-- slogans Section -->
+        <section class="slogans" id="slogans" style="padding: 2rem;">
+            <h1 class="heading"><span>Slogans</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="" style="height: 25rem ; border-radius: 50%;"> 
+                    <h3>Coming Soon....... </h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+                <div class="box">
+                    <img src="" style="height: 25rem"> 
+                    <h3>Coming Soon.......</h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+                <div class="box">
+                    <img src=""style="height: 25rem"> 
+                    <h3>Coming Soon.......</h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+                <div class="box">
+                    <img src="" style="height: 25rem"> 
+                    <h3>Coming Soon.......</h3>
+                    <a href="addToCart.html" target="_blank" class="btn"><i class="fa-solid fa-cart-plus">  </i> Add To Cart</a>
+                </div>
+            </div>
+        </section>
+<!-- slogans Section End-->
+
+<!-- god Section -->
+        <section class="god" id="god" style="padding: 2rem;">
+            <h1 class="heading"><span >Hindu God</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="Images/Krishna Sticker.png" style="height:23rem;">  
+                    <h3 class="product-name">Krishna Sticker </h3>
+                    <h2 class="product-price">Rs. 25.00</h2>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="Images/Lord Shiva.png" style="height: 25rem"> 
+                    <h3>Lord Shiva</h3>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="Images/Ganesha Sticker.png" style="height:23rem;">  
+                    <h3 class="product-name">Ganesha Sticker </h3>
+                    <h2 class="product-price">Rs. 25.00</h2>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="Images/Lord Hanuman.png" style="height: 25rem"> 
+                    <h3>Lord Hanuman</h3>
+                    <button class="add-to-cart"><i class="fa-solid fa-cart-plus"></i> Add To Cart</button>
+                </div>
+            </div>
+        </section>
+
+<!-- god Section  End-->    
+
+<!-- Footer Start -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p id="mail">Email:sticktoon.xyz@gmail.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: Jaints Squ, Your City, Your Country</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Return Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sticktoon.xyz/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2024 StickToon. All rights reserved.</p>
+</footer>
+ <!-- Footer End -->
+    </main>
+
+
+
+    <script src="script.js"></script>
+   
+    
+</body>
+</html>

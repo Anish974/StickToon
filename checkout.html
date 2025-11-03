@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Sticktoon</title>
+    <link rel="icon" href="Images/Sticktoon Logo monster.png" type="image/png">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="index.html">
+            <img src="Images/Sticktoon Logo 3.png" height="59px" alt="Sticktoon Logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="checkout-page">
+        <div class="checkout-container">
+            <!-- Address Section -->
+            <div class="address-section">
+                <h1>Checkout</h1>
+                <form id="checkout-form">
+                    <h2>Billing Information</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+
+                    <h2>Contact</h2>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <h2>Delivery</h2>
+                    <label for="delivery">Delivery Method:</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="standard">Standard Delivery</option>
+                        <option value="express">Express Delivery</option>
+                    </select>
+
+                    <h2>Shipping Method</h2>
+                    <label for="shipping-method">Shipping Method:</label>
+                    <select id="shipping-method" name="shipping-method" required>
+                        <option value="standard">Standard Shipping</option>
+                        <option value="express">Express Shipping</option>
+                    </select>
+
+                    <h2>Payment</h2>
+                    <label for="payment">Payment Method:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="upi">UPI</option>
+                        <option value="cod">Cash On Delivery</option>
+                    </select>
+
+                    <h2>Add Tip</h2>
+                    <label for="tip">Add Tip:</label>
+                    <input type="number" id="tip" name="tip" min="0" step="5" placeholder="Rs. 0.00">
+
+                    <button type="submit" class="btn">Confirm Order</button>
+                </form>
+            </div>
+
+        
+           <!-- Order Summary Section -->
+            <div class="order-summary-section">
+                 <h2>Order Summary</h2>
+                 <div id="order-summary-content" class="order-summary-dropdown">
+                  <div id="order-items"></div>
+                
+                  <div id="order-total">Total: Rs. 0.00</div>
+                  <input type="text" id="discount-code" placeholder="Enter discount code">
+                  <button id="apply-discount" class="btn">Apply</button>
+                  <div id="discounted-total"></div>
+                 </div>
+                 <div id="final-order-total">Final Total: Rs. 0.00</div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
